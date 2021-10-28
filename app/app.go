@@ -347,6 +347,8 @@ func New(
 		appCodec,
 		keys[integritymoduletypes.StoreKey],
 		keys[integritymoduletypes.MemStoreKey],
+		app.BankKeeper,
+		app.MintKeeper,
 	)
 	integrityModule := integritymodule.NewAppModule(appCodec, app.IntegrityKeeper)
 
