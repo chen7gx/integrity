@@ -1,4 +1,5 @@
 declare const _default: {
+    Chen7GxIntegrityChen7GxIntegrityIntegrity: (store: any) => void;
     CosmosCosmosSdkCosmosAuthzV1Beta1: (store: any) => void;
     CosmosCosmosSdkCosmosBankV1Beta1: (store: any) => void;
     CosmosCosmosSdkCosmosCrisisV1Beta1: (store: any) => void;

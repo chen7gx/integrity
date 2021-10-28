@@ -7,7 +7,17 @@ option go_package = "github.com/chen7gx/integrity/x/integrity/types";
 
 // Msg defines the Msg service.
 service Msg {
-    // this line is used by starport scaffolding # proto/tx/rpc
+      rpc CreateHash(MsgCreateHash) returns (MsgCreateHashResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgCreateHash {
+  string creator = 1;
+  string details = 2;
+  string hash = 3;
+}
+
+message MsgCreateHashResponse {
 }
 
 // this line is used by starport scaffolding # proto/tx/message
