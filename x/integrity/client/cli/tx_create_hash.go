@@ -16,7 +16,7 @@ var _ = strconv.Itoa(0)
 func CmdCreateHash() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "create-hash [details] [hash]",
-		Short: "Broadcast message createHash",
+		Short: "commit datahash",
 		Args:  cobra.ExactArgs(2),
 		RunE: func(cmd *cobra.Command, args []string) (err error) {
 			argDetails := args[0]
