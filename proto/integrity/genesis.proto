@@ -1,0 +1,11 @@
+syntax = "proto3";
+package chen7gx.integrity.integrity;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/chen7gx/integrity/x/integrity/types";
+
+// GenesisState defines the integrity module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+}
