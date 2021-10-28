@@ -88,6 +88,7 @@ func (m *MsgCreateHash) GetHash() string {
 }
 
 type MsgCreateHashResponse struct {
+	Id uint64 `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
 }
 
 func (m *MsgCreateHashResponse) Reset()         { *m = MsgCreateHashResponse{} }

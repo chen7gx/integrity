@@ -15,6 +15,9 @@ const (
 
 	// MemStoreKey defines the in-memory store key
 	MemStoreKey = "mem_integrity"
+
+	HashKey      = "Hash-value-"
+	HashCountKey = "Hash-count-"
 )
 
 func KeyPrefix(p string) []byte {

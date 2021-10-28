@@ -8,6 +8,7 @@ import (
 var _ sdk.Msg = &MsgCreateHash{}
 
 func NewMsgCreateHash(creator string, details string, hash string) *MsgCreateHash {
+
 	return &MsgCreateHash{
 		Creator: creator,
 		Details: details,

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package chen7gx.integrity.integrity;
+option go_package = "github.com/chen7gx/integrity/x/integrity/types";
+message Datahash {
+  string creator = 1;
+  uint64 id = 2;
+  string details = 3; 
+  string hash = 4; 
+}
