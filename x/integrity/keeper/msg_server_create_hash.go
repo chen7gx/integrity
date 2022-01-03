@@ -23,7 +23,7 @@ func (k msgServer) CreateHash(goCtx context.Context, msg *types.MsgCreateHash) (
 	// Return the ID of the post
 
 	txgas := sdk.NewInt(1)
-	coin := sdk.NewCoin("aphoton", txgas)
+	coin := sdk.NewCoin("stake", txgas)
 	coins := sdk.NewCoins(coin)
 
 	err := k.MintCoinsForHash(ctx, coins)
